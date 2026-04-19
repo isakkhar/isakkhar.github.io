@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | Portfolio</title>
+    <!-- Link to Google Fonts (Lato) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="header"></header>
+
+    <section class="projects-page section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projects Gallery</h2>
+                <p>A collection of my recent work and experiments.</p>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card animate-up">
+                    <div class="project-img">
+                        <div class="overlay">
+                            <a href="#"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Web App</h3>
+                        <p>A full-featured e-commerce platform with integrated payment gateways and user authentication.</p>
+                        <div class="tags" style="margin-top: 10px; display: flex; gap: 5px; flex-wrap: wrap;">
+                            <span style="background: var(--secondary-bg); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">React</span>
+                            <span style="background: var(--secondary-bg); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Node.js</span>
+                            <span style="background: var(--secondary-bg); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card animate-up delay-1">
+                    <div class="project-img">
+                        <div class="overlay">
+                            <a href="#"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Manager App</h3>
+                        <p>A modern productivity tool for tracking daily tasks and managing projects efficiently.</p>
+                        <div class="tags" style="margin-top: 10px; display: flex; gap: 5px; flex-wrap: wrap;">
+                            <span style="background: var(--secondary-bg); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">JavaScript</span>
+                            <span style="background: var(--secondary-bg); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card animate-up delay-2">
+                    <div class="project-img">
+                        <div class="overlay">
+                            <a href="#"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Image Generator</h3>
+                        <p>A creative tool that uses DALL-E API to generate stunning images from text prompts.</p>
+                        <div class="tags" style="margin-top: 10px; display: flex; gap: 5px; flex-wrap: wrap;">
+                            <span style="background: var(--secondary-bg); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Next.js</span>
+                            <span style="background: var(--secondary-bg); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">OpenAI API</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card animate-up delay-3">
+                    <div class="project-img">
+                        <div class="overlay">
+                            <a href="#"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Dashboard</h3>
+                        <p>Real-time weather tracking application with interactive maps and 7-day forecasts.</p>
+                        <div class="tags" style="margin-top: 10px; display: flex; gap: 5px; flex-wrap: wrap;">
+                            <span style="background: var(--secondary-bg); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Vue.js</span>
+                            <span style="background: var(--secondary-bg); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">OpenWeatherMap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
