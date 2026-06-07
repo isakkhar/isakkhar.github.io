@@ -9,9 +9,9 @@ const components = {
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
-            <div class="menu-btn">
+            <button class="menu-btn" type="button" aria-label="Open navigation" aria-expanded="false">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
         </nav>
     `,
     footer: `
@@ -32,19 +32,12 @@ function loadComponents() {
         footerElement.innerHTML = components.footer;
     }
 
-    // Re-initialize menu toggle logic for the newly injected header
-    const menuBtn = document.querySelector('.menu-btn');
-    if (menuBtn) {
-        menuBtn.addEventListener('click', () => {
-            alert('Mobile menu feature will be added soon.');
-        });
-    }
-
     // Update active link based on current page
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     const navLinks = document.querySelectorAll('.nav-links a');
     navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPage) {
+        const href = link.getAttribute('href');
+        if (href === currentPage || (currentPage === 'index.html' && href === 'index.html#contact' && window.location.hash === '#contact')) {
             link.classList.add('active-link');
         }
     });
